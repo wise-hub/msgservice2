@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+  scheduling:
+    enabled: true
+
+msgservice:
+  api:
+    key: "your-api-key"
+
+logging:
+  level:
+    root: INFO
+    bg.fibank.msgservice: DEBUG
+  file:
+    name: logs/msgservice.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %5p [%t] %c{1}:%L - %m%n"
